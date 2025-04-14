@@ -56,19 +56,19 @@ variable "auto_scale_options" {
 variable "user_pool_name" {
   description = "Nome do Cognito User Pool"
   type        = string
-  default     = "Hackathon-User-Pool-Teste"
+  default     = "fiap-video-challenge-user-pool"
 }
 
 variable "client_name" {
   description = "Nome do App Client do Cognito"
   type        = string
-  default     = "Hackathon-App-Client"
+  default     = "fiap-video-challenge-app-client"
 }
 
 variable "domain_name" {
   description = "Prefixo do domínio para o Cognito"
   type        = string
-  default     = "hackathon-unique-teste"
+  default     = "fiap-video-challenge-auth"
 }
 
 variable "oauth_flows" {
@@ -86,9 +86,9 @@ variable "oauth_scopes" {
 variable "tags" {
   description = "Tags para os recursos"
   type        = map(string)
-  default = {
+  default     = {
     "Environment" = "dev"
-    "Project"     = "MyProject"
+    "Project" = "FiapVideoChallenge"
   }
 }
 
@@ -96,7 +96,7 @@ variable "tags" {
 variable "api_name" {
   description = "Nome da API Gateway"
   type        = string
-  default     = "api_gateway_fast_food"
+  default     = "fiap-video-challenge-api-gateway"
 }
 
 variable "api_description" {
@@ -121,7 +121,7 @@ variable "stage_name" {
 variable "lambda_name" {
   description = "Nome da função Lambda"
   type        = string
-  default     = "authorizer_cognito"
+  default     = "fiap-video-challenge-lambda-auth"
 }
 
 variable "lambda_handler" {

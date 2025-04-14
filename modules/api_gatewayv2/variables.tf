@@ -1,9 +1,9 @@
-variable "lambda_arn" {}
+variable "api_name" {}
 
-variable "lambda_invoke_arn" {}
+variable "lambda_arn" { }
 
-variable "cognito_client_id" {}
+variable "lambda_invoke_arn" { }
 
-variable "cognito_user_pool_id" {}
+variable "cognito_client_id" { }
 
-variable "project_name" {}
+variable "cognito_user_pool_id" { }
